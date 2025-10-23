@@ -1,3 +1,17 @@
+## Kort refleksion
+
+Jeg er tilfreds med, hvordan det som jeg har nået virker - jeg synes det efterligner prototypen så godt som muligt. 
+Jeg har gjort mit bedste for at opsætte custom properties og global css - farver, gap og font-styles. Jeg ville dog gerne have nået mere og brugt flere (og mere avancerede) custom properties samt evt. flow-space-teknikken. 
+Jeg synes jeg lykkedes godt med at bruge grid og subgrid til layoutet på siden, her med navngivne gridlines for at opnå større kontrol. Det er en teknik jeg gerne vil arbejde mere med, da jeg synes den har mange spændende muligheder!
+Med komponententen "main-section" har jeg brugt Astro-props til at gøre indholdet dynamisk, men jeg har desværre ikke nået at bruge komponenten mere end ét sted. 
+
+Jeg er ked af, at jeg ikke nåede længere med opgaven. Jeg har tendens til at være meget perfektionistisk på en stædig måde, hvor jeg har svært ved at slippe mindre vigtige detaljer og gå videre, selv når jeg ved, at der er vigtigere ting at fokusere på (og man kan jo altid vende tilbage senere). Det vil jeg gerne blive bedre til at administrere.
+
+Jeg føler mig også nødsaget til at komme med en undskyldning for min arbejdsindsats, da jeg har været enormt begrænset pga. flytning inkl. renovering samt private udfordringer, der har fyldt enormt meget. 
+Jeg er ved at "lande" igen, og jeg glæder mig til at kunne lægge den samme energi og tid i studiet igen, som jeg kunne for måned siden!:) 
+
+Og til Dannie hvis du læser: forløbet du har undervist os i har været intensivt og virkelig spændende! Jeg er mega glad for alle de fantastiske CSS-muligheder som nu er en del af min "værktøjskasse", det er jeg oprigtigt begejstret for. På trods af min stressede og lidt begrænsede periode her i Oktober er jeg ved godt mod, og føler stadig jeg har godt overblik. 
+
 # Opgaveskabelon til Frontend Design tema på Frontend-valgfaget
 
 Se opgavebeskrivelsen på Fronter.
