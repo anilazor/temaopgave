@@ -65,6 +65,11 @@ import CEOImage from "@assets/images/ceo.png";
         grid-column-start: content-start;
         grid-column-end: middle;
 
+        @media (width < 700px) {
+          grid-column-start: full-start;
+          grid-column-end: full-end;
+        }
+
         h1 {
           margin-block-end: var(--block-gap-small);
         }
