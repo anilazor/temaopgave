@@ -1,0 +1,66 @@
+<header>
+  <div class="header-content">
+    <h3>AskExperts</h3>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Home</a>
+        </li>
+        <li>
+          <a href="">Case Study</a>
+        </li>
+        <li>
+          <a href="">Team</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+      </ul>
+    </nav>
+    <button> <a href="">Login</a></button>
+  </div>
+</header>
+
+<style>
+  header {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: full;
+    background: rgba(27, 27, 27, 0.91);
+    color: var(--white);
+    backdrop-filter: blur(10.5px);
+    position: sticky;
+    top: 0;
+    z-index: +1;
+
+    .header-content {
+      grid-column: content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2.375rem;
+      grid-row: 1;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.875rem;
+    }
+
+    a {
+      font-weight: 400;
+      font-size: 1.108rem;
+    }
+
+    button {
+      background-color: var(--yellow);
+      color: var(--black);
+
+      &:hover {
+        background-color: var(--hover-yellow);
+      }
+    }
+  }
+</style>

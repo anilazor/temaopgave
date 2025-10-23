@@ -5,6 +5,15 @@ import CEOImage from "@assets/images/ceo.png";
 ---
 
 <section class="hero">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1921"
+    height="616"
+    viewBox="0 0 1921 616"
+    fill="none"
+  >
+    <path d="M0.50293 0H1920.5V615.626H0.50293V0Z" fill="#181818"></path>
+  </svg>
   <div class="hero-content">
     <h1>Empowering Your Business Growth</h1>
     <p>
@@ -15,16 +24,91 @@ import CEOImage from "@assets/images/ceo.png";
     <a href="#0">Book a Meeting</a>
   </div>
   <Image src={CEOImage} alt="CEO" />
-
-  <Services />
+  <div class="services">
+    <Services />
+  </div>
 </section>
 
 <style>
   /* Styles her */
   @layer components {
     .hero {
-      background-color: #f3f4f6;
-      padding: 2rem;
+      background-color: var(--black);
+      color: var(--white);
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: full;
+      position: relative;
+
+      @media (width < 700px) {
+        grid-column-start: full-start;
+        grid-column-end: full-end;
+      }
+
+      @media (width < 1400px) {
+        > *:not(img) {
+          padding-inline: 1.25rem;
+        }
+      }
+
+      .hero-content {
+        container-type: inline-size;
+        container-name: content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--inline-gap);
+        max-width: 31rem;
+        grid-row: 1;
+        padding-block: 4rem;
+        padding-right: 2rem;
+        grid-column-start: content-start;
+        grid-column-end: middle;
+
+        h1 {
+          margin-block-end: var(--block-gap-small);
+        }
+
+        p {
+          margin-block-end: var(--block-gap-medium);
+        }
+
+        > a {
+          background: var(--white);
+          color: var(--text-black);
+          padding: 1rem 1.9375rem;
+          border-radius: 2.625rem;
+          font-size: 1.125rem;
+          margin-top: 0.625rem;
+        }
+      }
+    }
+
+    img {
+      grid-column-start: middle;
+      grid-column-end: full-end;
+      object-fit: cover;
+      align-self: stretch;
+
+      @media (width < 700px) {
+        display: none;
+      }
+    }
+
+    .services {
+      grid-row: 2;
+      grid-column: content;
+    }
+
+    .hero::before {
+      content: "";
+      background-color: var(--white);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      grid-column: full;
+      grid-row: 2;
     }
   }
 </style>
